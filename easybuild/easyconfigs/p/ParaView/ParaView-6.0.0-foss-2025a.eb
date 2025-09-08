@@ -35,6 +35,7 @@ dependencies = [
     ('FFmpeg', '7.1.1'),
     ('Szip', '2.1.1'),
     ('matplotlib', '3.10.3'),       # For rendering of latex-format labels
+    ('OSPRay', '2.12.0', '', SYSTEM),
 ]
 
 _copts = [
@@ -44,6 +45,7 @@ _copts = [
     '-DPARAVIEW_USE_MPI=ON',
     '-DPARAVIEW_ENABLE_FFMPEG=ON',
     '-DPARAVIEW_USE_PYTHON=ON',
+    '-DPARAVIEW_ENABLE_RAYTRACING=ON',
     # Useful input formats
     '-DPARAVIEW_ENABLE_XDMF2=ON',
     '-DPARAVIEW_ENABLE_XDMF3=ON',
